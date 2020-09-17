@@ -4,43 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <title>Calculator</title>
 </head>
 
 <body>
     <div class="calculator">
-        <div class="summa">100.000.000</div>
+        <div class="calc-display">0</div>
         <div class="buttons">
-            <div class="rows">
-                <button id="c" class="light">C</button>
-                <button id="+-" class="light">+-</button>
-                <button id="%" class="light">%</button>
-                <button id="/" class="orange">/</button>
+            <div class="row">
+                <button id="calc-clear" class="calc-btn calc-btn-top">C</button>
+                <button id="calc-backspace" class="calc-btn calc-btn-top">&#8676;</button>
+                <button id="calc-percent" class="calc-btn calc-btn-top">%</button>
+                <button id="calc-divide" class="calc-btn calc-btn-operator">&#247;</button>
             </div>
-            <div class="rows">
-                <button id="7" class="dark">7</button>
-                <button id="8" class="dark">8</button>
-                <button id="9" class="dark">9</button>
-                <button id="x" class="orange">X</button>
+            <div class="row">
+                <button id="calc-seven" class="calc-btn calc-btn-num">7</button>
+                <button id="calc-eight" class="calc-btn calc-btn-num">8</button>
+                <button id="calc-nine" class="calc-btn calc-btn-num">9</button>
+                <button id="calc-multiply" class="calc-btn calc-btn-operator">X</button>
             </div>
-            <div class="rows">
-                <button id="4" class="dark">4</button>
-                <button id="5" class="dark">5</button>
-                <button id="6" class="dark">6</button>
-                <button id="-" class="orange">-</button>
+            <div class="row">
+                <button id="calc-four" class="calc-btn calc-btn-num">4</button>
+                <button id="calc-five" class="calc-btn calc-btn-num">5</button>
+                <button id="calc-six" class="calc-btn calc-btn-num">6</button>
+                <button id="calc-minus" class="calc-btn calc-btn-operator">-</button>
             </div>
-            <div class="rows">
-                <button id="1" class="dark">1</button>
-                <button id="2" class="dark">2</button>
-                <button id="3" class="dark">3</button>
-                <button id="+" class="orange">+</button>
+            <div class="row">
+                <button id="calc-one" class="calc-btn calc-btn-num">1</button>
+                <button id="calc-two" class="calc-btn calc-btn-num">2</button>
+                <button id="calc-three" class="calc-btn calc-btn-num">3</button>
+                <button id="calc-plus" class="calc-btn calc-btn-operator">+</button>
             </div>
-            <div class="rows">
-                <button id="0" class="dark big">0</button>
-                <button id="," class="dark">,</button>
-                <button id="=" class="orange">=</button>
+            <div class="row">
+                <button id="calc-zero" class="calc-btn calc-btn-num">0</button>
+                <button id="calc-comma" class="calc-btn calc-btn-num">,</button>
+                <button id="calc-equal" class="calc-btn calc-btn-operator">=</button>
             </div>
         </div>
     </div>

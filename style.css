@@ -3,6 +3,7 @@
     margin: 0;
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .calculator {
@@ -11,7 +12,7 @@
     height: 100vh;
 }
 
-.summa {
+.calc-display {
     background-color:#000;
     color: #fff;
     max-width: 100vw;
@@ -20,6 +21,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    overflow: hidden;
 }
 
 .buttons {
@@ -31,7 +33,7 @@
     align-items: center;
 }
 
-button {
+.calc-btn {
     width: 25vw;
     height: 16vh;
     font-size: 5rem;
@@ -44,29 +46,29 @@ button:hover {
     transition: 0.3s ease-in-out;
 }
 
-.rows {
+.row {
     width: 100vw;
     height: auto;
     display: flex;
     justify-content: space-between;
 }
 
-.light {
+.calc-btn-top {
     background-color: #CBCBCB;
     color: #000;
 }
 
-.orange {
+.calc-btn-operator {
     background-color: #FFB200;
     color: #fff;
 }
 
-.dark {
-    background-color: #6D6D6D;
+.calc-btn-num {
+    background-color: #565656;
     color: #fff;
 }
 
-.big {
+#calc-zero {
     width: 50vw;
     height: 16vh;
 }
