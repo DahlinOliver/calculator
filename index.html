@@ -14,36 +14,36 @@
 
 <body>
     <div class="calculator">
-        <div class="calc-display">0</div>
+        <div id="inputLabel">0</div>
         <div class="buttons">
             <div class="row">
-                <button id="calc-clear" class="calc-btn calc-btn-top">C</button>
-                <button id="calc-backspace" class="calc-btn calc-btn-top">&#8676;</button>
-                <button id="calc-percent" class="calc-btn calc-btn-top">%</button>
-                <button id="calc-divide" class="calc-btn calc-btn-operator">&#247;</button>
+                <button class="calc-btn calc-btn-top" onclick="pushBtn(this);">AC</button>
+                <button class="calc-btn calc-btn-top" onclick="pushBtn(this);">DEL</button>
+                <button class="calc-btn calc-btn-top" onclick="pushBtn(this);">%</button>
+                <button class="calc-btn calc-btn-operator" onclick="pushBtn(this);">/</button>
             </div>
             <div class="row">
-                <button id="calc-seven" class="calc-btn calc-btn-num">7</button>
-                <button id="calc-eight" class="calc-btn calc-btn-num">8</button>
-                <button id="calc-nine" class="calc-btn calc-btn-num">9</button>
-                <button id="calc-multiply" class="calc-btn calc-btn-operator">X</button>
+                <button class="calc-btn calc-btn-num" onclick="pushBtn(this);">7</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">8</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">9</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-operator">*</button>
             </div>
             <div class="row">
-                <button id="calc-four" class="calc-btn calc-btn-num">4</button>
-                <button id="calc-five" class="calc-btn calc-btn-num">5</button>
-                <button id="calc-six" class="calc-btn calc-btn-num">6</button>
-                <button id="calc-minus" class="calc-btn calc-btn-operator">-</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">4</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">5</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">6</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-operator">-</button>
             </div>
             <div class="row">
-                <button id="calc-one" class="calc-btn calc-btn-num">1</button>
-                <button id="calc-two" class="calc-btn calc-btn-num">2</button>
-                <button id="calc-three" class="calc-btn calc-btn-num">3</button>
-                <button id="calc-plus" class="calc-btn calc-btn-operator">+</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">1</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">2</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">3</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-operator">+</button>
             </div>
             <div class="row">
-                <button id="calc-zero" class="calc-btn calc-btn-num">0</button>
-                <button id="calc-comma" class="calc-btn calc-btn-num">,</button>
-                <button id="calc-equal" class="calc-btn calc-btn-operator">=</button>
+                <button onclick="pushBtn(this);" id="calc-zero" class="calc-btn calc-btn-num">0</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-num">.</button>
+                <button onclick="pushBtn(this);" class="calc-btn calc-btn-operator">=</button>
             </div>
         </div>
     </div>
